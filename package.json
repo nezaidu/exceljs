@@ -30,7 +30,6 @@
     "clean": "rm -rf build/ && rm -rf dist",
     "build": "./node_modules/.bin/grunt build",
     "preversion": "npm run clean && npm run build && npm run test:full",
-    "preinstall": "./node_modules/.bin/grunt build",
     "postversion": "git push --no-verify && git push --tags --no-verify"
   },
   "keywords": [
